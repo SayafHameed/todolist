@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: #494141;
+}
+.card{
+    width: 50%;
+    background:linear-gradient(135deg ,#153677,#4e08);
+    min-width: 100vh;
+    margin: 50px auto 0;
+    padding: 2rem 10px 10px ;
+    min-height: 80vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.heading{
+    color: white;
+    
+    width: 50%;
+    display: flex;
+    
+    align-items: center;
+    gap: 10px;
+     margin-top: 20px;
+     margin-left: 40px;
+     margin-bottom: 10px;
+}
+.heading h2{
+    font-weight: bolder;
+    font-size: 30px;
+}
+.heading>h2 img{
+    width: 30px;
+}
+.input{
+    height: 3rem;
+    /* background-color: #382929; */
+    background-color: #b19696;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+}
+button:hover{
+cursor: pointer;
+}
+.input>input,button{
+    height: 100%;
+    border-radius: 40px;
+}
+input{
+    flex: 3;
+    border: none;
+    /* background-color: #b19696; */
+    outline: none;
+    /* width: 100%; */
+    padding-left: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    overflow-x: scroll;
+    background: transparent;
+    
+}
+.input button{
+    /* width: 100px; */
+    background-color: orangered;
+    border: none;
+    outline: none;
+    z-index: 1;
+    flex: 1;
+    font-size: larger;
+    font-weight: bolder;
+     /* width: 50px; */
+}
+ul{
+    /* background: #e7e3e3; */
+    margin-top: 30px;
+    min-width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 90%;
+} 
+ul li{
+    list-style: none;
+    font-size: 20px;
+    padding: 12px 50px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    background-color: aliceblue;
+    border-radius: 70px;
+    width: 100%;
+    position: relative;
+    font-weight: bold;
+    overflow-wrap: break-word;
+    flex-wrap: wrap;
+    /* height: initial; */
+    /* text-align: center; */
+}
+ul li::before{
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-image: url(images/dry-clean.png);
+    background-size: cover;
+    background-position: center;
+    top: 10px;
+    left: 8px;
+
+}
+/* ul li::after{
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-image: url(images/cancel.png);
+    background-size: cover;
+    background-position: center;
+    top: 10px;
+    left: 88%;
+    
+    padding-right:  auto 10px 10px ;
+} */
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(images/check-circle.png);
+}
+ul li span{
+    position: absolute;
+    right: 0.9px;
+    /* top:10px; */
+    /* left: 10px; */
+    bottom: 0.5px;
+    width: 50px;
+    height: 100%;
+    font-size: 25px;
+    color: #555;
+    text-align: center;
+    /* line-height: 40px; */
+    border-radius: 50%;
+    padding-top: 10px;
+
+}
+ul li span:hover{
+    background-color: red;
+    color: white;
+}
+.clearbtn{
+width: 10rem;
+height: 40px;
+border: none;
+outline: none;
+font-size: large;
+font-weight: bold;
+color: white;
+background-color: red;
+visibility: hidden;
+margin-top: 30px;
+
+}
+
+
